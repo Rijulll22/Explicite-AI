@@ -1,0 +1,10 @@
+{
+  "description": "Streamline your workflow with a user-friendly platform that optimizes token usage for efficient communication and task management.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
