@@ -1,9 +1,92 @@
+
+# Dependencies
 node_modules/
+jspm_packages/
+bower_components/
+.pnpm-store/
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+# Build output
 dist/
 build/
+build/Release/
+coverage/
+.nyc_output/
+*.lcov
+lib-cov/
+.next/
+out/
+.nuxt/
+.output/
+.vuepress/dist/
+.temp/
+.svelte-kit/
+**/.vitepress/dist/
+**/.vitepress/cache/
+.docusaurus/
+.astro/
+.turbo/
+.serverless/
+.fusebox/
+.dynamodb/
+.firebase/
+.cache/
+.parcel-cache/
+web_modules/
+
+# Environment variables and secrets
 .env
 .env.*
 !.env.example
+
+# Logs
+logs/
 *.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Diagnostic reports
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage and instrumentation
+.grunt/
+.nyc_output/
+*.tsbuildinfo
+
+# Package manager and caches
+.lock-wscript
+.npm/
+.yarn-integrity
+.eslintcache
+.stylelintcache
+.node_repl_history
+*.tgz
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+.vite/
+.pnpm-store/
+.tern-port
+
+# IDE and OS
 .DS_Store
 Thumbs.db
+.vscode-test/
+
+# Optional local configuration
+# Uncomment if your project should not share VS Code settings:
+# .vscode/*
+# !.vscode/extensions.json
