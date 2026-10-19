@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+/* ── Appearance / theme ───────────────────────────────────────────────────── */
+
+:root {
+  --code-font-size: 13px;
+}
+
+/* Dark application theme */
+html[data-theme="dark"] body {
+  background-color: #0f172a;
+  color: #e2e8f0;
+}
+html[data-theme="dark"] header,
+html[data-theme="dark"] aside,
+html[data-theme="dark"] nav {
+  background-color: #1e293b !important;
+  border-color: #334155 !important;
+  color: #e2e8f0 !important;
+}
+html[data-theme="dark"] main {
+  background-color: #0f172a;
+}
+html[data-theme="dark"] .bg-white {
+  background-color: #1e293b !important;
+}
+html[data-theme="dark"] .bg-gray-50 {
+  background-color: #0f172a !important;
+}
+html[data-theme="dark"] .bg-gray-100 {
+  background-color: #1e293b !important;
+}
+html[data-theme="dark"] .text-gray-900 {
+  color: #f1f5f9 !important;
+}
+html[data-theme="dark"] .text-gray-700 {
+  color: #cbd5e1 !important;
+}
+html[data-theme="dark"] .text-gray-600 {
+  color: #94a3b8 !important;
+}
+html[data-theme="dark"] .text-gray-500 {
+  color: #64748b !important;
+}
+html[data-theme="dark"] .border-gray-200 {
+  border-color: #334155 !important;
+}
+html[data-theme="dark"] .border-gray-300 {
+  border-color: #475569 !important;
+}
+html[data-theme="dark"] input,
+html[data-theme="dark"] select,
+html[data-theme="dark"] textarea {
+  background-color: #1e293b !important;
+  color: #e2e8f0 !important;
+  border-color: #475569 !important;
+}
+
+/* ── Code block styles (font size + colour scheme) ────────────────────────── */
+
+.code-block {
+  font-size: var(--code-font-size);
+  font-family: var(--font-mono);
+}
+
+/* Dark code scheme (default) */
+html[data-code-scheme="code-dark"] .code-block {
+  background-color: #0d1117;
+  color: #e6edf3;
+}
+html[data-code-scheme="code-dark"] .code-line-add {
+  background-color: #1a3726;
+  color: #7ee787;
+}
+html[data-code-scheme="code-dark"] .code-line-remove {
+  background-color: #3d1a1a;
+  color: #ff7b72;
+}
+html[data-code-scheme="code-dark"] .code-line-meta {
+  background-color: #1a2638;
+  color: #79c0ff;
+}
+html[data-code-scheme="code-dark"] .code-line-header {
+  background-color: #161b22;
+  color: #8b949e;
+}
+
+/* Light code scheme */
+html[data-code-scheme="code-light"] .code-block {
+  background-color: #f8f8f8;
+  color: #24292f;
+}
+html[data-code-scheme="code-light"] .code-line-add {
+  background-color: #d1f8d9;
+  color: #116329;
+}
+html[data-code-scheme="code-light"] .code-line-remove {
+  background-color: #ffd7d5;
+  color: #82071e;
+}
+html[data-code-scheme="code-light"] .code-line-meta {
+  background-color: #ddf4ff;
+  color: #0550ae;
+}
+html[data-code-scheme="code-light"] .code-line-header {
+  background-color: #f0f0f0;
+  color: #656d76;
+}
+
+/* High contrast code scheme */
+html[data-code-scheme="code-hc"] .code-block {
+  background-color: #000;
+  color: #fff;
+}
+html[data-code-scheme="code-hc"] .code-line-add {
+  background-color: #004400;
+  color: #00ff00;
+}
+html[data-code-scheme="code-hc"] .code-line-remove {
+  background-color: #440000;
+  color: #ff4444;
+}
+html[data-code-scheme="code-hc"] .code-line-meta {
+  background-color: #000044;
+  color: #4488ff;
+}
+html[data-code-scheme="code-hc"] .code-line-header {
+  background-color: #111;
+  color: #aaa;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #d1d5db transparent;
+}
+*::-webkit-scrollbar { width: 5px; height: 5px; }
+*::-webkit-scrollbar-track { background: transparent; }
+*::-webkit-scrollbar-thumb { background: #d1d5db; border-radius: 9px; }

@@ -1,0 +1,11 @@
+{
+  "title": "Explicite AI — AI-Powered Code Review",
+  "description": "Explicite AI: AI-powered static analysis and code review for development teams.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
